@@ -13,11 +13,11 @@ body{
     align-items: center;
     justify-content: center;
 }
-h1{
+h2{
     color: white;
 }
 .botten2{
-    background-color: rgb(119, 84, 226);
+    background-color:rgb(215, 18, 18);
     height: 30px;
     width: 40px;
     border-radius: .5rem;
@@ -29,11 +29,11 @@ h1{
     font-weight: bold;
 }
 .botten2:hover{
-    background-color: rgb(168, 137, 205);
+    background-color: rgb(218, 108, 108);
 }
 .LIST{
     display: flex;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     color: white;
     font-size: large;
     font-family: cursive;
@@ -59,7 +59,55 @@ h1{
 #btn:hover{
     background-color:lightblue;
 }
+@media(max-width:350px){
+    #Todo_input{
+    height: 1.8pc;
+    width: 17pc;
+    border-radius: .5rem;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(2, 2, 2)
+
+}
+#btn{
+    height: 1.8pc;
+    width: 42px;
+    border-radius: .5rem;
+    border: none;
+
+}
+#btn:hover{
+    background-color:lightblue;
+}
+
+
+}
+@media(max-width:400px){
+    #Todo_input{
+    height: 1.8pc;
+    width: 15pc;
+    border-radius: .5rem;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(2, 2, 2)
+
+}
+#btn{
+    height: 1.8pc;
+    width: 42px;
+    border-radius: .5rem;
+    border: none;
+
+}
+#btn:hover{
+    background-color:lightblue;
+}
+
+}
 #first_Form{
     display: flex;
     gap: 1rem;
+    padding-top: 1rem;
 }

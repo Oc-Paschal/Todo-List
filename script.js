@@ -32,7 +32,7 @@ function createTaskElement(taskTest){
     const textContent = document.createTextNode(taskTest);
     
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'X';
+    deleteButton.textContent = 'Del';
     deleteButton.classList.add('botten2');
 
     deleteButton.addEventListener('click',deleteTask);
