@@ -112,17 +112,10 @@ h2{
     gap: 1rem;
     padding-top: 1rem;
 }
-/* #unlist{
-    /* width: 450px; */
-    /* margin: 20px auto 0; */
-    
 
-} */
 .LIST{
-    display: flex;
-    color: purple;
-    width: 120px;
-    overflow-wrap: break-word;
+    width: 80vw;
+    text-wrap: wrap;
     
 
 }
