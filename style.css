@@ -10,6 +10,7 @@ body{
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
     align-items: center;
     justify-content: center;
 }
@@ -110,4 +111,18 @@ h2{
     display: flex;
     gap: 1rem;
     padding-top: 1rem;
+}
+/* #unlist{
+    /* width: 450px; */
+    /* margin: 20px auto 0; */
+    
+
+} */
+.LIST{
+    display: flex;
+    color: purple;
+    width: 120px;
+    overflow-wrap: break-word;
+    
+
 }
