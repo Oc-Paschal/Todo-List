@@ -9,6 +9,7 @@ function addTask(){
         createTaskElement(taskTest);
         INPUT.value = '';
         INPUT.focus();
+        saveTasks();
     }
 }
 
@@ -19,12 +20,31 @@ INPUT.addEventListener('keypress', function(event){
         addTask();
     }
 });
+ loadTask();
 
 
 function deleteTask(event){
     const listitem = event.target.parentElement;
     UNLIST.removeChild(listitem);
+    saveTasks();
 }
+  function saveTasks(){
+    const tasks = [];
+    UNLIST.querySelectorAll('li').forEach(item =>{
+        const taskTest = item.firstChild.textContent.trim();
+        tasks.push(taskTest);
+    });
+    localStorage.setItem('myTodoTasks', JSON.stringify(tasks));
+  }
+  function loadTask(){
+    const tasksJSON = localStorage.getItem('myTodoTasks');
+    if (tasksJSON){
+        const tasks = JSON.parse(tasksJSON);
+        tasks.forEach(taskTest => {
+            createTaskElement(taskTest);
+        });
+    }
+  }
 
 function createTaskElement(taskTest){
     const newTask = document.createElement('li');
